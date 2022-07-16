@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" id="home">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+
+  <!-- Cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+  <!-- Css -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/button.css" />
+</head>
+
+<body class="antialiased">
+
+  <!-- Navbar -->
+  <nav
+    class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 md:px-20 px-10 text-lg text-zinc-900 bg-white/50 backdrop-blur-sm fixed z-10"
+    id="coreNav">
+    <div>
+      <a href="/" class="font-bold text-2xl duration-300" id="nav">RENDI DEV</a>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block" fill="none"
+      viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+
+    <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+      <ul class="pt-4 text-base text-zinc-900 md:flex md:justify-between md:pt-0 duration-300" id="navlink">
+        <li>
+          <a class="md:p-4 py-2 block hover:text-zinc-500 md:font-normal font-semibold" href="#home">Home</a>
+        </li>
+        <li>
+          <a class="md:p-4 py-2 block hover:text-zinc-500 md:font-normal font-semibold" href="#project">Project</a>
+        </li>
+        <li>
+          <a class="md:p-4 py-2 block hover:text-zinc-500 md:font-normal font-semibold" href="#contactUs">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <!-- Header -->
+  <header class="h-screen flex items-center">
+    <div class="">
+      <div class="ml-5 md:ml-16 text-4xl md:text-7xl font-bold text-zinc-900">
+        <h1 class="bayangan">Hi,</h1>
+        <h1 class="bayangan">I'm Rendi</h1>
+        <h1 class="bayangan">Web Developer</h1>
+        <p class="font-normal text-[16px] md:text-2xl md:mt-3 text-zinc-600">
+          Front End Developer / Back End Developer
+        </p>
+      </div>
+
+      <!-- Eye -->
+      <img src="./img/eye.svg" class="absolute top-32 right-10 md:block hidden">
+      <!-- End Eye -->
+
+      <!-- Button -->
+      <a href="https://www.instagram.com/rendihndra/" target="_blank">
+        <button class="learn-more md:mt-10 md:ml-16 ml-5 mt-5">Contact Me</button>
+      </a>
+      <!-- End Button -->
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- About -->
+  <div class="bg-zinc-900 h-screen" id="project">
+    <h1 class="text-center text-white text-5xl pt-20 font-bold tracking-widest bayanganAbout" data-aos="zoom-in"
+      data-aos-delay="300">
+      PROJECT
+    </h1>
+
+    <!-- Swiper Js -->
+
+    <!-- Slider main container -->
+    <div class="swiper mt-28">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides 1 -->
+        <div class="swiper-slide flex justify-center md:p-0 p-10">
+          <a href="http://rhs25.epizy.com/Stopwatch/" target="_blank">
+            <div class="max-w-sm rounded overflow-hidden border-2 border-white">
+              <img class="w-full" src="./img/Stopwatch.png">
+              <div class="px-6 py-4 bg-white">
+                <div class="font-bold text-xl mb-2 text-center">Stopwatch</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Slides 2 -->
+        <div class="swiper-slide flex justify-center md:p-0 p-10">
+          <a href="http://rhs25.epizy.com" target="_blank">
+            <div class="max-w-sm rounded overflow-hidden border-2 border-white">
+              <img class="w-full" src="./img/Kalkulator.png">
+              <div class="px-6 py-4 bg-zinc-900">
+                <div class="font-bold text-xl mb-2 text-center text-white">Kalkulator</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="swiper-button-prev md:ml-10 md:w-[44px] w-3"></div>
+      <div class="swiper-button-next md:mr-10 md:w-[44px] w-3"></div>
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+  </div>
+  </div>
+  <!-- End About -->
+
+
+  <!-- Contact Us -->
+  <div class="h-screen" id="contactUs">
+    <h1 class="text-center text-zinc-900 text-5xl pt-20 font-bold tracking-widest bayangan">CONTACT US</h1>
+  </div>
+
+
+
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
